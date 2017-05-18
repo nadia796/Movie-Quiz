@@ -1,0 +1,180 @@
+<!--My HTML page for my first project-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+        
+        
+        
+        
+        <title>Movie Mania Quiz</title>
+        
+        <!--GOOGLE FONTS-->
+        <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css?family=Tauri" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+<!--MY OWN CSS SCRIPT-->
+        <link rel="stylesheet" href="myFirstProjectNadia.css">
+         
+    </head>
+    <body>
+        
+        <div class = "mainContainer">
+            <!--<video src="images/starryBackground.mp4" type="video/mp4" poster="" id="myVideo" class="myVideo" muted preload="metadata" loop autoplay>-->
+            <div class="mainContentContainer">
+                <header class ="mainTitle"> 
+                    <h1>MOVIE MANIA QUIZ</h1>
+                    
+                </header>
+                <section class="mainBody">
+                    <section class="chooseCategory">
+                        <h2>CHOOSE YOUR CATEGORY:</h2>
+                        <div class="chooseCategoryImages">
+                            <div class="categoryRow1">
+                                
+                                 <button class="buttonImage" id="buttonImage1" name="movie" value="1">ACTION</button>
+
+                                <button class="buttonImage" id="buttonImage2" name="movie" value="2">CLASSIC</button>
+
+                                <button class="buttonImage" id="buttonImage3" name="movie" value="3">COMEDY</button>
+
+                            </div>
+                            <div class="categoryRow2">
+                             <button class="buttonImage" id="buttonImage4" name="movie" value="4">HORROR</button>
+
+                             <button class="buttonImage" id="buttonImage5" name="movie" value="5">ROMANCE</button>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!--<section class ="chooseLevel">
+                        <h2>CHOOSE YOUR LEVEL:</h2>
+                        <div class="buttonGroup">
+                          <button id="easyButton" class="button" name="level" value="easy">EASY</button>
+                          <button id="mediumButton" class="button" name="level" value="medium">MEDIUM</button>
+                          <button id="hardButton" class="button" name="level" value="hard">HARD</button>
+                          
+                        </div>
+                        
+                        
+                           <div id="showSelectedCategory" class="showSelectedCategory">
+                                
+                            </div>
+                        <br> 
+                        <div id="showSelectedLevel" class="showSelectedLevel">
+                        
+                        
+                        </div>
+                        
+                        
+                        <div class="startQuiz">
+                            <button id="startQuizButton" class="startQuizButton">START QUIZ</button>
+                        </div>
+                        
+                        <div id="errorMessage" class="errorMessage">
+                        This section needs to show an error if the user hasnt selected either a category or a level. They must select both. 
+                        </div>-->
+                        
+                        
+                        <!--section to show what the user has selected--> 
+                     
+                        
+                        <!--The quiz modal-->
+                        <div id="quizModal" class="modal">
+                        
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <!--<img src="images/moviestrip.png">-->
+                                
+                                
+                                
+                                </div>
+                                 <div class="modal-body">
+                                     <h1 id="h2QuizTitle" class="h2QuizTitle"> </h1>
+                                     
+                                    <div id="quizDisplay" class="quizDisplay">
+                                    <div id="allQuestions" class="allQuestions">
+                                        <div class="firstSide">
+                                        <div class="question">
+                                        <h2 id="question1"></h2><span id="inputAnswer1" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer1"></select>
+                                        </div>
+
+                                        <div class="question">
+                                        <h2 id="question2"></h2><span id="inputAnswer2" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer2"></select>
+                                        </div>
+                                        
+                                        <div class="question">
+                                        <h2 id="question3"></h2><span id="inputAnswer3" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer3"></select>
+                                        </div>
+                                        
+                                        <div class="question">
+                                        <h2 id="question4"></h2><span id="inputAnswer4" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer4"></select>
+                                        </div>
+                                            
+                                        </div>
+                                        <div class="secondSide">
+                                        
+                                        <div class="question">
+                                        <h2 id="question5"></h2><span id="inputAnswer5" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer5"></select>
+                                        </div>
+                                        
+                                        <div class="question">
+                                        <h2 id="question6"></h2><span id="inputAnswer6" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer6"></select>
+                                        </div>
+                                        
+                                        <div class="question">
+                                        <h2 id="question7"></h2><span id="inputAnswer7" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer7"></select>
+                                        </div>
+                                        
+                                        <div class="question">
+                                        <h2 id="question8"></h2><span id="inputAnswer8" class="tick" name="tick"></span>
+                                        <select class="selectOptions" id="optionAnswer8"></select>
+                                        </div>
+                                        </div>
+
+                                        
+
+                                    </div>
+                                        <br>
+                                    
+                                        <br>
+                                    
+                                        <div class="checkButtonArea">
+                                            <button type="button" id="submit_answer" class="checkAnswer">Check Answers</button><span id="rightWrong"></span>
+                                            <label class="quizScore" id="quizScore"></label><br>
+                                            <label class="quizDescription" id="quizDescription"></label>
+                                            
+                                         </div>
+
+                                        
+                                    </div>
+                                </div>
+                            <!--    <div class="modal-footer">
+                                    <h3 id="quizResponse" class="quizResponse">Click [x] or outside the modal to exit</h3>
+                                </div>-->
+                            </div>
+                        
+                        </div>
+                        
+                   <!-- </section>-->
+               </section>
+            </div>
+        </div>
+        
+    <script src="myFirstProjectNadia.js"></script>
+    
+    </body>
+</html>

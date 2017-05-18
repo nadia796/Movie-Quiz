@@ -1,0 +1,1124 @@
+/*My CSS file*/
+
+/*This is the main container */
+
+.mainContainer {
+    height: auto;
+    position:absolute;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    background-image:url(images/popcorn.jpg);
+    z-index: -1;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+
+
+
+/*This is the area where I will put all my content*/
+
+.mainContentContainer{
+    height:100%;
+    width:80%;
+    /*position: absolute;*/
+    margin-left: 10%;
+    /*background-color: darkolivegreen;*/
+    background-color: rgba(85, 107, 47, 0.85);
+   /* opacity: 0.92;*/
+    border-style:groove;
+    border-radius: 15px;
+    border-color: grey;
+    z-index: -1;
+    
+}
+
+
+
+
+
+/*Title - Header Area*/
+
+
+.mainTitle, h1{
+    font-family: 'Rammetto One', cursive;
+    text-align: center;
+    color: gold;
+    text-shadow: -10px 3px 0 black;
+    font-size: 100px;
+    position:relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    animation: moveHeading 2s infinite;
+    
+
+}
+
+@keyframes moveHeading {
+    0%   {top: 0px;}
+    50% {top:10px;}
+    100%{top:0px;}
+}
+
+.chooseCategory > h2{
+    font-family: 'Tauri', sans-serif;
+    text-shadow: -2.5px 2px 0 black;
+    display: block;
+    /*margin-left: 130px;*/
+    color: rgb(209, 158, 29);
+    text-align: center; 
+    animation: categoryTitleAnimation 9s linear infinite;
+    position: relative;
+}
+
+@keyframes categoryTitleAnimation {
+   0% {left: -30%;}
+    50%  {left: 30%;}
+    100%  {left: -30%;}
+    
+}
+
+
+
+/*This is the main body after the header where I will split the section into two parts for better viewing*/
+
+
+.mainBody{
+    height: auto;
+    width:100%;
+    z-index:-1;
+    /*z-index:1;*/
+   /* background-color: aqua;*/
+}
+
+/*This is my first section - left side */
+
+.chooseCategory{
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    margin:0;
+    padding:0;
+    /*background-color: coral;*/
+    z-index:1;
+    position:relative;
+    /*animation-name: chooseCategoryAnimation;*/
+    animation-duration: 1s;
+    text-align: center;
+    
+   
+}
+
+
+
+
+
+
+.chooseCategoryImages img{
+    margin: 10px 20px 10px 20px;
+    
+}
+
+
+
+.categoryRow2 {
+    /*margin-left: 90px;*/
+    margin-bottom:30px;
+    
+}
+
+
+
+categoryRow1, button{
+    margin: 50px;
+}
+
+
+#buttonImage1 {
+    height:200px;
+    width:150px;
+    background-image:
+    url(images/action/action3.jpg);
+    cursor: pointer;
+    border-radius: 15px;
+    text-indent: 110%;
+    overflow: hidden;
+    border-width: thick;
+    border-color: black;
+    position:relative;
+    animation: button1Animation 5s linear infinite;
+    
+    
+        
+    
+    
+}
+
+/*@keyframes button1Animation {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes button2Animation {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes button3Animation {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes button4Animation {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes button5Animation {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}*/
+
+
+
+
+
+#buttonImage2 {
+    height:200px;
+    width:150px;
+    background-image: url(images/classic/classic4.jpg);
+    cursor: pointer;
+    border-radius: 15px;
+    text-indent: 110%;
+    overflow: hidden;
+    border-width: thick;
+    border-color: black;
+    position: relative;
+    animation: button2Animation 5s linear infinite;
+    /*animation-delay: 0.5s;*/
+}
+
+
+
+
+#buttonImage3 {
+    height:200px;
+    width:150px;
+    background-image: url(images/comedy/comedy1.jpg);
+    cursor: pointer;
+    border-radius: 15px;
+    text-indent: 110%;
+    overflow: hidden;
+    border-width: thick;
+    border-color: black;
+    position: relative;
+    animation: button3Animation 5s linear infinite ;
+    /*animation-delay: 0.4s;*/
+}
+#buttonImage4 {
+    height:200px;
+    width:150px;
+    color:white;
+    background-image: url(images/horror/horror1.jpg);
+    cursor: pointer;
+    border-radius: 15px;
+    text-indent: 110%;
+    overflow: hidden;
+    border-width: thick;
+    border-color: black;
+    position: relative;
+    animation: button4Animation 5s linear infinite ;
+    /*animation-delay: 0.6s;*/
+}
+
+#buttonImage5 {
+    height:200px;
+    width:150px;
+    background-image: url(images/romance/romance3.jpg);
+    cursor: pointer;
+    border-radius: 15px;
+    text-indent: 110%;
+    overflow: hidden;
+    border-width: thick;
+    border-color: black;
+    position: relative;
+    animation: button5Animation 5s linear infinite ;
+    /*animation-delay: 0.8s;*/
+}
+
+/*
+css for buttons when they are hovered upon
+*/
+
+.buttonImage:hover {
+    /*border-bottom-color: white;*/
+    z-index: 1;
+    background-color: rgba(200,200,200,1);
+    transform: scale(1.3,1.3);
+    background-color: darkslategrey;
+    background-blend-mode:multiply;
+    position: relative;
+    
+}
+
+.buttonImage:active {
+    transform: translateY(4px);
+    position: relative;
+}
+
+
+
+#buttonImage1:hover {
+    visibility: visible;
+    content:'ACTION';
+    text-indent:inherit;
+    color:white;
+    font-family: 'Tauri', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+#buttonImage2:hover {
+    visibility: visible;
+    content:'CLASSIC';
+    text-indent:inherit;
+    color:white;
+    font-family: 'Tauri', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+#buttonImage3:hover {
+    visibility: visible;
+    content:'COMEDY';
+    text-indent:inherit;
+    color:white;
+    font-family: 'Tauri', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+#buttonImage4:hover {
+    visibility: visible;
+    content:'HORROR';
+    text-indent:inherit;
+    color:white;
+    font-family: 'Tauri', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+
+#buttonImage5:hover {
+    visibility: visible;
+    content:'ROMANCE';
+    text-indent:inherit;
+    color:white;
+    font-family: 'Tauri', sans-serif;
+    font-size: 20px;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*This is my second section - right side*/
+
+
+.chooseLevel{
+    height: auto;
+    width: 48%;
+    margin:0;
+    padding: 0;
+    
+    display:inline-block;
+    float: right;
+    position:relative;
+    
+}
+
+.chooseLevel{
+    animation-name:chooseLevelAnimation;
+    animation-duration: 1s;
+}
+
+
+
+.chooseLevel > h2{
+    font-family: 'Tauri', sans-serif;
+    text-shadow: -2.5px 2px 0 black;
+    display: block;
+    margin-left: 130px;
+    color: rgb(209, 158, 29);
+    
+}
+
+.button {
+    background-color: rgba(51, 58, 8, 1); 
+    border: 1px solid black;
+    border-width:2px;
+    border-radius: 25px;
+    color:darkgoldenrod;
+    padding: 25px 60px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    position:relative;
+    font-size: 20px;
+    font-family: 'Tauri', sans-serif;
+    cursor: pointer;
+    float: left;
+    z-index: 1;
+    margin:0;
+    opacity:1;
+}
+
+.button:hover {
+    background-color:rgba(48, 80, 36, 1);
+    border-bottom-width: thick;
+    border-bottom-style: groove; 
+  
+  padding: 30px 60px;
+  transform: scale(1.1);
+    
+}
+
+.button:active {
+    transform: translateY(4px);
+}
+
+
+
+.startQuizButton {
+   background-color: darkgoldenrod;
+    border: 1px solid black;
+    border-radius: 25px;
+    border-color: darkslategray;
+    border-width:medium;
+    color:rgba(51, 58, 8, 1);
+    padding: 25px 60px;
+    text-align: center;
+    text-decoration:none;
+    display: block;
+    position:absolute;
+    font-size: 20px;
+    font-family: 'Tauri', sans-serif;
+    cursor: pointer;
+    float: left;
+    z-index: 1;
+    margin-top: 270px;
+    margin-left: 150px;
+    opacity:1; 
+}
+
+
+
+
+
+.startQuizButton:active {
+    background-color: darkgoldenrod;
+    opacity: 0.7;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/*This is the modal css*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-bottom:200px; /*changed content by me*/
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 70px 10px;
+    /*background-image: url(images/moviestrip.png);*/
+    color: white;
+    font-family: 'Tauri', sans-serif;
+    /*font-size: 30px;*/
+    background-image: repeating-linear-gradient(45deg, #000, #000 40px, #dbdbdb 30px, #dbdbdb 80px)
+};
+    position: relative;
+    
+}
+
+.h2QuizTitle {
+    position: relative;
+    animation: modalHeadingAnimation 3s;
+    
+    z-index: 1;
+}
+
+.question {
+    border: 0.5px dashed white;
+    margin: 10px;
+}
+.question > h2 {
+    /* color: rgb(44, 58, 10); */
+    color: rgba(200,200,200,1);
+    /* font-family: 'Tauri', sans-serif; */
+    font-family: 'Neucha', cursive;
+    font-size: 35px;
+}
+
+#optionAnswer1, #optionAnswer2, #optionAnswer3, #optionAnswer4, #optionAnswer5, #optionAnswer6, #optionAnswer7, #optionAnswer8
+
+{
+   overflow:hidden;
+   width:200px;
+    height: 40px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   box-shadow: 1px 1px 20px white;
+   background: #58B14C no-repeat scroll 319px center;
+    position: relative;
+    text-align: center;
+}
+
+
+
+#optionAnswer1, #optionAnswer2, #optionAnswer3, #optionAnswer4, #optionAnswer5, #optionAnswer6, #optionAnswer7, #optionAnswer8, select {
+   border: 0;
+   color: #EEE;
+   background: transparent;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 378px;
+   *width: 350px;
+   *background: #58B14C;
+    position: relative;
+    text-align: center;
+    margin:20px;
+    border-radius: 0;
+}
+
+.quizDisplay {
+    
+ margin-top: 5%;
+    
+}
+.allQuestions {
+    position: relative;
+}
+
+.allQuestions > .firstSide {
+   height: auto;
+    width:50%;
+    float:left;
+    position: relative;
+    /*margin:7px;*/
+    text-align: center;
+}
+
+.allQuestions > .secondSide {
+   height: auto;
+    width:50%;
+    float:left;
+    position: relative;
+    /*margin:7px;*/
+    text-align: center;
+}
+
+.checkAnswer 
+    
+   {
+    background-color: black; 
+    border: 1px solid white;
+    border-width:2px;
+    /*border-radius: 25px;*/
+    color:white;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    position:relative;
+    font-size: 20px;
+    font-family: 'Neucha', cursive;
+    cursor: pointer;
+    
+    z-index: 1;
+    
+    margin-top:50px;
+    opacity:1;
+}
+
+.checkButtonArea {
+    /*column-count: 3;*/
+    text-align: center;
+}
+
+.quizScore {
+    color:white;
+    font-family: 'Neucha', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.quizDescription {
+    color: white;
+    font-family: 'Neucha', cursive;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.selectOptions {
+    font-family: 'Neucha', cursive;
+}
+
+.optionStyle {
+    background-color: black;
+    
+}
+
+.optionStyleDisabled {
+    background-color: black;
+}
+
+
+
+
+
+
+@keyframes modalHeadingAnimation {
+    0% {left:-200px; bottom:50px;}
+    100% {left:0px; bottom:0px;}
+    
+}
+
+
+
+.modal-body {
+    padding: 2px 16px;
+    background-color: black;
+    position: relative;
+    height:100%;
+    width:auto;
+    
+    
+
+}
+/*
+.quizDisplay {
+    position: relative;
+    height:80%;
+    width: 80%;
+}
+*/
+
+.modal-header > img {
+    /*height: 200px;
+    width:100%;*/
+}
+
+.modal-body h1{
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size:50px;
+    color:white;
+    margin-top:50px;
+    /*top: 15%;
+    left: 5%;*/
+    font-family: 'Permanent Marker', cursive;
+    
+    z-index: 1;
+    padding:20px 0px;
+    border:0.5px solid white;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: rgb(44, 58, 10);
+    color: white;
+    font-family: 'Tauri', sans-serif;
+    text-align: center;
+    
+    position:relative;
+    
+}
+
+
+/*THESE ARE MY MEDIA QUERIES TO MAKE MY SITE RESPONSIVE*/
+
+
+
+@media only screen and (min-width: 768px) and (max-width:933px){
+    
+    
+    .allQuestions > .firstSide {
+    height: auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+    .allQuestions > .secondSide {
+    height: auto;
+    width: 100%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+    .mainContainer {
+        position: absolute;
+    }
+    
+    
+    .mainTitle, h1 {
+        font-size: 60px;
+    }
+    
+    .chooseCategory {
+    height: auto;
+    width: 100%;
+    /*display: block;*/
+    margin:0;
+   /* padding-left: 20px;
+    padding-right:20px;*/
+    /*background-color: coral;*/
+    /*z-index:1;*/
+    /*position:relative;*/
+    animation-name: chooseCategoryAnimation;
+    animation-duration: 1s;
+    
+   
+
+    }
+    
+    .chooseCategory > h2 {
+        text-align: center;
+        margin-top:50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        font-size:35px;
+    }
+    
+    
+    .categoryRow1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .categoryRow2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .chooseLevel {
+        float: none;
+        text-align: center;
+        width:100%;
+        margin-bottom:50px;
+        
+    }
+    
+    .chooseLevel > h2 {
+        text-align: center;
+        margin-top:70px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size:35px;
+    }
+    
+   
+    
+    .buttonGroup {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+       display:inline-block;
+    }
+ 
+    .button {
+        padding: 20px 50px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    
+    
+    .startQuiz {
+        text-align: center;
+        position:relative;
+        padding: 0;
+        margin:0;
+    }
+    
+    .startQuizButton {
+        margin-left: 0;
+        margin-top:50px;
+        position:relative;
+        text-align: center;
+        display: inline-block;
+        float:none;
+    }
+    
+    
+  
+   
+}
+
+/*========================================================================================*/
+
+@media only screen and (min-width: 934px) and (max-width:1300px){
+    
+    
+     .allQuestions > .firstSide {
+    height: auto;
+    width: 50%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+    .allQuestions > .secondSide {
+    height: auto;
+    width: 50%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+    
+
+#optionAnswer1, #optionAnswer2, #optionAnswer3, #optionAnswer4, #optionAnswer5, #optionAnswer6, #optionAnswer7, #optionAnswer8, select {
+    border: 0;
+    color: #EEE;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 300px;
+    -webkit-appearance: none;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+    
+    
+    .mainContainer {
+        position: absolute;
+    }
+    
+    .mainTitle, h1 {
+        font-size: 90px;
+    }
+    
+    .chooseCategory {
+    height: auto;
+    width: 100%;
+    /*display: block;*/
+    margin:0;
+   /* padding-left: 20px;
+    padding-right:20px;*/
+    /*background-color: coral;*/
+    /*z-index:1;*/
+    /*position:relative;*/
+    animation-name: chooseCategoryAnimation;
+    animation-duration: 1s;
+    
+   
+
+    }
+    
+    
+    
+    .chooseCategory > h2 {
+        text-align: center;
+        margin-top:50px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        font-size:35px;
+    }
+    
+    
+    .categoryRow1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .categoryRow2 {
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .chooseLevel {
+        float: none;
+        text-align: center;
+        width:100%;
+        margin-bottom:50px;
+        
+    }
+    
+    .chooseLevel > h2 {
+        text-align: center;
+        margin-top:70px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size:35px;
+    }
+    
+   
+    
+    .buttonGroup {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+       display:inline-block;
+    }
+ 
+    .button {
+        padding: 40px 70px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    
+    
+    .startQuiz {
+        text-align: center;
+        position:relative;
+        padding: 0;
+        margin:0;
+    }
+    
+    .startQuizButton {
+        margin-left: 0;
+        padding:40px 70px;
+        margin-top:50px;
+        position:relative;
+        text-align: center;
+        display: inline-block;
+        float:none;
+    }
+  
+   
+}
+
+
+
+@media only screen and (min-width: 1301px) and (max-width:1440px){
+    
+    .allQuestions > .firstSide {
+    height: auto;
+    width: 50%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+    .allQuestions > .secondSide {
+    height: auto;
+    width: 50%;
+    float: left;
+    position: relative;
+    /* margin: 7px; */
+    text-align: center;
+}
+    
+   .mainContainer {
+        position: absolute;
+    }
+    
+    
+    .mainTitle, h1 {
+        font-size: 90px;
+    }
+    
+    .chooseCategory {
+    height: auto;
+    width: 100%;
+    /*display: block;*/
+    margin:0;
+    margin-top: 50px;
+   /* padding-left: 20px;
+    padding-right:20px;*/
+    /*background-color: coral;*/
+    /*z-index:1;*/
+    /*position:relative;*/
+    animation-name: chooseCategoryAnimation;
+    animation-duration: 1s;
+    
+   
+
+    }
+    
+  
+    
+    .chooseCategory > h2 {
+        text-align: center;
+        margin-top:10px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        font-size:35px;
+    }
+    
+    
+    .categoryRow1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .categoryRow2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        
+    }
+    
+    .chooseLevel {
+        float: right;
+        text-align: center;
+        width:50%;
+        margin-bottom:50px;
+        margin-top:50px;
+        
+    }
+    
+    .chooseLevel > h2 {
+        text-align: center;
+        margin-top:50px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size:35px;
+    }
+    
+   
+    
+    .buttonGroup {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+       display:inline-block;
+    }
+ 
+    .button {
+        padding: 20px 50px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    
+    
+    .startQuiz {
+        text-align: center;
+        position:relative;
+        padding: 0;
+        margin:0;
+    }
+    
+    .startQuizButton {
+        margin-left: 0;
+        padding:40px 70px;
+        margin-top:50px;
+        position:relative;
+        text-align: center;
+        display: inline-block;
+        float:none;
+    }
+    
+    
+  
+   
+}
+
+
+
